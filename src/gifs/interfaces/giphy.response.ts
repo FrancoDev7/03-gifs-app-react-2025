@@ -1,4 +1,4 @@
-export interface GphyResponse {
+export interface GyphyResponse {
   data: GiphyGif[];
   meta: Meta;
   pagination: Pagination;
