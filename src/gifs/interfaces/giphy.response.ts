@@ -5,17 +5,14 @@ export interface GyphyResponse {
 }
 
 export interface GiphyGif {
-  type: Type;
   id: string;
   url: string;
   slug: string;
   bitly_gif_url: string;
   bitly_url: string;
   embed_url: string;
-  username: Name;
   source: string;
   title: string;
-  rating: Rating;
   content_url: string;
   source_tld: string;
   source_post_url: string;
@@ -100,32 +97,15 @@ export interface Looping {
   mp4: string;
 }
 
-export enum Rating {
-  G = "g",
-  PG = "pg",
-}
-
-export enum Type {
-  GIF = "gif",
-}
-
 export interface User {
   avatar_url: string;
   banner_image: string;
   banner_url: string;
   profile_url: string;
-  username: Name;
-  display_name: Name;
   description: string;
   instagram_url: string;
   website_url: string;
   is_verified: boolean;
-}
-
-export enum Name {
-  Empty = "",
-  Mannyjammy = "mannyjammy",
-  Netflixlat = "netflixlat",
 }
 
 export interface Meta {
